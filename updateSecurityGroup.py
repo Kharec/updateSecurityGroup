@@ -41,7 +41,7 @@ try:
 	)
 
 except botocore.exceptions.ClientError:
-	print("Security group", sgGroupId, "seems wrong...")
+	print("Security group id", sgGroupId, "seems wrong...")
 	exit(1)
 
 # get old and current IP
