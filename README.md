@@ -11,7 +11,7 @@ You need the followings :
 Then, from your terminal, just do:
 
 ~~~
-  kharec@macbee ~/Desktop % path/to/updateSecurityGroup.py --id <YOUR_SECURITY_GROUP_ID
+  kharec@macbee ~/Desktop % path/to/updateSecurityGroup.py --id <YOUR_SECURITY_GROUP_ID>
 ~~~
 
 And it's on.
