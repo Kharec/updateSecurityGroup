@@ -84,7 +84,7 @@ if oldIp != currentIp:
 	except botocore.exceptions.ClientError:
 		print("Malformed IP:", currentIp)
 		exit(1)
-else:
-	print("Your IP address didn't change.")
+		
+	print("Security group updated with new IP:", currentIp)
 
 exit(0)
