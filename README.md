@@ -1,6 +1,6 @@
 # updateSecurityGroup
 
-So, this is a simple python script to update your favorite AWS security group with your new IP. 
+So, this is a simple python script to update your favorite AWS security group with your new IP.
 
 You need the followings :
 
