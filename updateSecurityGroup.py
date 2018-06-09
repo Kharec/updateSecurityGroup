@@ -69,10 +69,10 @@ if oldIp != currentIp:
 	# Create our new rule with our new IP
 	try:
 		createNewRule = ec2.authorize_security_group_ingress(
-			GroupId=sgGroupId,
+		GroupId=sgGroupId,
     		IpPermissions=[
         		{
-        			'IpProtocol': '-1',
+        		'IpProtocol': '-1',
             		'IpRanges': [
                 		{
                     		'CidrIp': currentIp,
