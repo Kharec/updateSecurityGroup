@@ -16,4 +16,4 @@ Then, from your terminal, just do:
 
 And it's on.
 
-You can also, like me, set it in a cron on a computer witch is always at home, in my case my raspberry (connected to my router). 
+You can also, like me, set it in a cron on a computer which is always at home, in my case my raspberry (connected to my router). 
