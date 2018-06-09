@@ -7,12 +7,11 @@ You need the followings :
 * An up-to-date ~/.aws/config file with your credentials
 * Boto3 installed, ideally latest version
 
-
 Then, from your terminal, just do:
 
-~~~
+```bash
   kharec@macbee ~/Desktop % path/to/updateSecurityGroup.py --id <YOUR_SECURITY_GROUP_ID>
-~~~
+```
 
 And it's on.
 
