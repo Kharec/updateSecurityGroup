@@ -3,7 +3,8 @@
 
 from sys import exit
 from requests import get
-import boto3, botocore
+import boto3
+from botocore.exceptions import ClientError as BotoClientError
 import argparse
 
 __version__ = '0.1'
@@ -40,7 +41,7 @@ try:
 		GroupIds=[sgGroupId],
 	)
 
-except botocore.exceptions.ClientError:
+except BotoClientError:
 	print("Security group id", sgGroupId, "seems wrong...")
 	exit(1)
 
@@ -81,7 +82,7 @@ if oldIp != currentIp:
     		],
 		)
 
-	except botocore.exceptions.ClientError:
+	except BotoClientError:
 		print("Malformed IP:", currentIp)
 		exit(1)
 		
