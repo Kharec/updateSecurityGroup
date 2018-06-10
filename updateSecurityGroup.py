@@ -24,7 +24,7 @@ def getIp():
 
 parser = argparse.ArgumentParser(description="Update your AWS security group with your new IP address")
 parser.add_argument('-v', '--version', action='store_true', help='Print version and exit')
-parser.add_argument('-i', '--id', help='Security group\'s id you want to update')
+parser.add_argument('id', help='Security group\'s id you want to update')
 
 args = vars(parser.parse_args())
 
