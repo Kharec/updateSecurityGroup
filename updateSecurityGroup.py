@@ -16,11 +16,11 @@ __status__ = "Production"
 
 
 def getIp():
-	'''Simple function to get your ip, using ipinfo.io
-	API and JSON. We're modifying it to match AWS SG
-	requirements'''
+	'''Simple function to get your ip.
+	   We're modifying it to match AWS SG 
+	   requirements'''
 
-	return(get(('https://ipinfo.io')).json()['ip']+"/32")
+	return(get('http://checkip.amazonaws.com').text[:-2]+"/32")
 
 parser = argparse.ArgumentParser(description="Update your AWS security group with your new IP address")
 parser.add_argument('-v', '--version', action='store_true', help='Print version and exit')
