@@ -20,7 +20,7 @@ def getIp():
 	   We're modifying it to match AWS SG 
 	   requirements'''
 
-	return(get('http://checkip.amazonaws.com').text[:-2]+"/32")
+	return(get('https://ipinfo.io').json()['ip']+"/32")
 
 parser = argparse.ArgumentParser(description="Update your AWS security group with your new IP address")
 parser.add_argument('-v', '--version', action='store_true', help='Print version and exit')
