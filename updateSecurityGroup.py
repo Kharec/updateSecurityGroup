@@ -46,7 +46,7 @@ except BotoClientError:
 	exit(1)
 
 # get old and current IP
-oldIp = sg['SecurityGroups'][0]['IpPermissions'][0]['IpRanges'][1]['CidrIp']
+oldIp = sg['SecurityGroups'][0]['IpPermissions'][0]['IpRanges'][0]['CidrIp']
 currentIp = getIp()
 
 if oldIp != currentIp:
